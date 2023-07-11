@@ -1,0 +1,126 @@
+/* Only for positioning styling*/
+
+/*header*/
+.headerPrincipal .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerPrincipal-nav {
+  display: flex;
+}
+
+/*footer*/
+.rodapePrincipal-patrocinadores .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rodapePrincipal-patrocinadores-list {
+  display: flex;
+  width: 75%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.rodapePrincipal-contatoForm-fieldset {
+  display: flex;
+}
+
+/* the course's categories*/
+
+.rodapePrincipal-navMap-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 260px;
+}
+
+.contenidoPrincipal-cursos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contenidoPrincipal-cursos-link {
+  display: flex;
+  width: 23%;
+}
+
+/* the video section*/
+.videoSobre .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.videoSobre-sobre {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.videoSobre-sobre-list,
+.videoSobre-sobre-title {
+  text-align: center;
+}
+
+/* Responsiveness*/
+@media (max-width:768px) {
+  .headerPrincipal .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .headerPrincipal-nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .headerPrincipal-nav a,
+  .headerPrincipal-titulo {
+    text-align: center;
+  }
+
+  .contenidoPrincipal-cursos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contenidoPrincipal-cursos-link {
+    display: flex;
+    width: 100%;
+  }
+
+  .videoSobre .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .rodapePrincipal-navMap-list {
+    height: auto;
+    flex-wrap: nowrap;
+  }
+
+  .rodapePrincipal-patrocinadores .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .rodapePrincipal-patrocinadores-list {
+    align-items: center;
+    width: 100%;
+    margin: 0;
+  }
+
+  .rodapePrincipal-contatoForm-fieldset {
+    justify-content: center;
+  }
+
+  .headerPrincipal-nav-link-app{
+    order: -1;
+
+  }
+
+
+
+}
